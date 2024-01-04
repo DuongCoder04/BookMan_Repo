@@ -31,7 +31,7 @@
             // khởi tạo view
             BookSingleView view = new BookSingleView(model);
             // hiển thị ra màn hình
-            view.Render(model);
+            view.Render();
         }
         /// <summary>
         /// kích hoạt chức năng nhập dữ liệu cho 1 cuốn sách
@@ -49,7 +49,7 @@
         {
             var model = new Book();
             var view = new BookUpdateView(model);
-            view.Render();
+            view.Render(model);
         }
 
     }
