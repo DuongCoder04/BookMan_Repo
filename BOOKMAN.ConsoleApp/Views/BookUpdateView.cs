@@ -1,7 +1,6 @@
-﻿using System;
-using System.Reflection;
-namespace BookMan.ConsoleApp.Views
+﻿namespace BookMan.ConsoleApp.Views
 {
+    using BOOKMAN.ConsoleApp.Framework;
     using BOOKMAN.ConsoleApp.Models;
     class BookUpdateView
     {
@@ -12,18 +11,15 @@ namespace BookMan.ConsoleApp.Views
         }
         public void Render()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("UPDATE BOOK INFORMATION");
-            Console.ResetColor();
+            ViewHelp.WriteLine("UPDATE BOOK INFORMATION", ConsoleColor.Green);
+            //sử dụng phương thức static
+            ConsoleColor labelColor = ConsoleColor.Magenta,
+            valueColor = ConsoleColor.White;
             // hiển thị giá trị cũ
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.Write("Authors: ");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine(Model.Authors);
-            // yêu cầu nhập giá trị mới
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.Write("New value: ");
-            Console.ResetColor();
+            ViewHelp.Write("Author: ", labelColor); //sử dụng phương thức static
+            ViewHelp.WriteLine(Model.Authors, valueColor); // sử dụng phương thức static
+            // yêu cầu nhập dữ liệu
+            ViewHelp.Write("New value: ", labelColor); //sử dụng phương thức static
             // đọc giá trị mới 
             var str = Console.ReadLine();
             /* nếu người dùng ấn enter luôn (bỏ qua nhập dữ liệu) thì lấy lại giá trị cũ

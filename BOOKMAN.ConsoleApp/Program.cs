@@ -18,6 +18,9 @@
                     case "create":
                         controller.Create();
                         break;
+                    case "update":
+                        controller.Update(1);
+                        break;
                     case "exit":
                         Environment.Exit(0);
                         break;
