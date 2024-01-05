@@ -1,4 +1,4 @@
-﻿namespace BookMan.ConsoleApp.Views
+﻿namespace BOOKMAN.ConsoleApp.Views
 {
     using BOOKMAN.ConsoleApp.Framework;
     using BOOKMAN.ConsoleApp.Models;

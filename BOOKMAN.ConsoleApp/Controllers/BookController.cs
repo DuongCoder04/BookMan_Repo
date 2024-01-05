@@ -1,6 +1,5 @@
 ﻿namespace BOOKMAN.ConsoleApp.Controllers
 {
-    using BookMan.ConsoleApp.Views;
     using BOOKMAN.ConsoleApp.Views;
     using Models; //lưu ý cách dùng using với không gian tên con
 
@@ -50,6 +49,31 @@
             var model = new Book();
             var view = new BookUpdateView(model);
             view.Render(model);
+        }
+        /// <summary>
+        /// kích hoạt chức năng hiển thị danh sách
+        /// </summary>
+        public void List()
+        {
+            /* khai báo và khởi tạo một mảng, mỗi phần tử thuộc kiểu Book.
+            * Lệnh dưới dây khai báo và khởi tạo 1 mảng gồm 6 phần tử,
+            * mỗi phần tử thuộc kiểu Book.
+            * Do Book là class, mỗi phần tử của mảng cũng phải được khởi tạo
+            * sử dụng từ khóa new, tương tự như khởi tạo một object bình thường
+            */
+
+            Book[] model = new Book[]
+            {
+                new Book{Id=1, Title = "A new book 1"},
+                new Book{Id=2, Title = "A new book 2"},
+                new Book{Id=3, Title = "A new book 3"},
+                new Book{Id=4, Title = "A new book 4"},
+                new Book{Id=5, Title = "A new book 5"},
+                new Book{Id=6, Title = "A new book 6"},
+
+            };
+            BookListView view = new BookListView(model);
+            view.Render();
         }
 
     }

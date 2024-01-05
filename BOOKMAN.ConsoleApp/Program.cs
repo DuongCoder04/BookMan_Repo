@@ -21,6 +21,9 @@
                     case "update":
                         controller.Update(1);
                         break;
+                    case "list":
+                        controller.List();
+                        break;
                     case "exit":
                         Environment.Exit(0);
                         break;
