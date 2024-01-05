@@ -1,11 +1,13 @@
 ﻿namespace BOOKMAN.ConsoleApp
 {
+    using BOOKMAN.ConsoleApp.DataServices;
     using Controllers;
     internal class Program
     {
         private static void Main(string[] args)
         {
-            BookController controller = new BookController();
+            SimpleDataAccess context = new SimpleDataAccess();
+            BookController controller = new BookController(context);
             while (true)
             {
                 Console.Write("Request> ");
