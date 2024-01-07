@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BOOKMAN.ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fe2814816986c55425c26a83869baa5a49c8cfc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35f0c902b44d9b08dee4b9e5b6966f578e222c11")]
 [assembly: System.Reflection.AssemblyProductAttribute("BOOKMAN.ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BOOKMAN.ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,7 +3,6 @@
     using BOOKMAN.ConsoleApp.Framework;
     using BOOKMAN.ConsoleApp.DataServices;
     using Controllers;
-    using global::Framework.BOOKMAN.ConsoleApp.Framework;
 
     internal class Program
     {

@@ -1,8 +1,4 @@
-﻿using BOOKMAN.ConsoleApp.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
-namespace Framework
+﻿using System.Text;
 
 namespace BOOKMAN.ConsoleApp.Framework
 {
