@@ -1,0 +1,5 @@
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net8.0\BOOKMAN.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net8.0\BOOKMAN.ConsoleApp.AssemblyInfoInputs.cache
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net8.0\BOOKMAN.ConsoleApp.AssemblyInfo.cs
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net8.0\BOOKMAN.ConsoleApp.csproj.CoreCompileInputs.cache
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net8.0\BOOKMAN.ConsoleApp.sourcelink.json
