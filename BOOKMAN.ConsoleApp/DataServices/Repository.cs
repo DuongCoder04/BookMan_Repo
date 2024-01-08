@@ -56,17 +56,17 @@ namespace BOOKMAN.ConsoleApp.DataServices
         {
             var b = Select(id);
             if (b == null) return false;
-            b.Authors = book.Authors;
-            b.Description = book.Description;
-            b.Edition = book.Edition;
-            b.File = book.File;
-            b.Isbn = book.Isbn;
-            b.Publisher = book.Publisher;
-            b.Rating = book.Rating;
-            b.Reading = book.Reading;
-            b.Tags = book.Tags;
-            b.Title = book.Title;
-            b.Year = book.Year;
+            b.Authors       = book.Authors;
+            b.Description   = book.Description;
+            b.Edition       = book.Edition;
+            b.File          = book.File;
+            b.Isbn          = book.Isbn;
+            b.Publisher     = book.Publisher;
+            b.Rating        = book.Rating;
+            b.Reading       = book.Reading;
+            b.Tags          = book.Tags;                                                            
+            b.Title         = book.Title;
+            b.Year          = book.Year;
             return true;
         }
 

@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.IO;
 using BOOKMAN.ConsoleApp.Framework;
 using BOOKMAN.ConsoleApp.Models;
 
@@ -7,42 +7,27 @@ namespace BOOKMAN.ConsoleApp.Views
     /// <summary>
     /// Class để hiển thị danh sách Book
     /// </summary>
-    internal class BookListView
+    internal class BookListView : ViewBase
     {
-        protected Book[] Model;// mảng của object kiểu Book
-        /// <summary>
-        /// Hàm tạo
-        /// </summary>
-        /// <param name="model">danh sách object kiểu Book</param>
-        public BookListView(Book[] model) 
-        {
-            Model = model;
-        }
-        /// <summary>
-        /// danh sách ra console
-        /// </summary>
+        public BookListView(Book[] model) : base(model) { }
         public void Render()
         {
-            if(Model.Length == 0)
+            if (((Book[])Model).Length == 0)
             {
                 ViewHelp.WriteLine("No book found!", ConsoleColor.Yellow);
                 return;
             }
-            ViewHelp.WriteLine("THE BOOK LIST", ConsoleColor.Green);
-            int i = 0;
-            while(i < Model.Length)
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("THE BOOK LIST");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            foreach(Book b in Model as Book[])
             {
-                ViewHelp.Write($"[{Model[i].Id}]", ConsoleColor.Yellow);
-                ViewHelp.WriteLine($" {Model[i].Title}", Model[i].Reading ? ConsoleColor.Cyan : ConsoleColor.White);
-                i++;
+                ViewHelp.Write($"[{b.Id}]", ConsoleColor.Yellow);
+                ViewHelp.WriteLine($"{b.Title}", b.Reading ? ConsoleColor.Cyan : ConsoleColor.White);
             }
+            Console.ResetColor();
         }
-        public void RenderToFile(string path)
-        {
-            ViewHelp.WriteLine($"Saving data to file '{path}'");
-            var json = Newtonsoft.Json.JsonConvert.SerializeObject(Model);
-            System.IO.File.WriteAllText(path, json);
-            ViewHelp.WriteLine("Done");
-        }
+        
     }
+
 }
