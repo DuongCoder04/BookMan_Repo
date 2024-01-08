@@ -18,13 +18,14 @@ namespace BOOKMAN.ConsoleApp.Controllers
         /// ghép nối dữ liệu 1 cuốn sách với giao diện hiển thị 1 cuốn sách
         /// </summary>
         /// <param name="id">mã định danh của cuốn sách</param>
-        public void Single(int id)
+        public void Single(int id, string path = "")
         {
             // lấy dữ liệu qua repository
             var model = Repository.Select(id);
             // khởi tạo view
             BookSingleView view = new BookSingleView(model);
             // hiển thị ra màn hình
+            if(!string.IsNullOrEmpty(path)) { view.RenderToFile(path); return; }
             view.Render();
         }
         /// <summary>
@@ -49,12 +50,13 @@ namespace BOOKMAN.ConsoleApp.Controllers
         /// <summary>
         /// kích hoạt chức năng hiển thị danh sách
         /// </summary>
-        public void List()
+        public void List(string path = "")
         {
             // lấy dữ liệu qua repository
             var model = Repository.Select();
             // khởi tạo view
             BookListView view = new BookListView(model);
+            if(!string.IsNullOrEmpty(path)) { view.RenderToFile(path); return; }
             view.Render();
         }
 

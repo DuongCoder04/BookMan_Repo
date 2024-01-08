@@ -13,3 +13,6 @@ E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Debug\net8.0\refint\BOOKMAN.Co
 E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Debug\net8.0\BOOKMAN.ConsoleApp.pdb
 E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Debug\net8.0\BOOKMAN.ConsoleApp.genruntimeconfig.cache
 E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Debug\net8.0\ref\BOOKMAN.ConsoleApp.dll
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Debug\net8.0\BOOKMAN.ConsoleApp.csproj.AssemblyReference.cache
+E:\Project\C_sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Debug\net8.0\BOOKMAN.ConsoleApp.csproj.CopyComplete
