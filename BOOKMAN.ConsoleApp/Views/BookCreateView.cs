@@ -11,7 +11,7 @@ namespace BOOKMAN.ConsoleApp.Views
         /// <summary>
         /// yêu cầu người dùng nhập từng thông tin và lưu lại thông tin đó
         /// </summary>
-        public void Render()
+        public override void Render()
         {
             ViewHelp.WriteLine("CREATE A NEW BOOK", ConsoleColor.Green);
             var title       = ViewHelp.InputString("Title"); // đọc vào biến title

@@ -6,14 +6,14 @@ namespace BOOKMAN.ConsoleApp.Views
     /// <summary>
     /// Cách để hiển thị một cuốn sách 
     /// </summary>
-    internal class BookSingleView : ViewBase
+    internal class BookSingleView : ViewBase<Book>
     {
         /// <summary>
         /// Đây là hàm tạo, sẽ được gọi đầu tiên khi tạo object
         /// </summary>
         /// <param name="model">cuốn sách cụ thể sẽ được hiển thị</param>
-        public BookSingleView(Book[] model) : base(model) { }
-        public void Render()
+        public BookSingleView(Book model) : base(model) { }
+        public override void Render()
         {
             if(Model == null)
             {
@@ -22,19 +22,18 @@ namespace BOOKMAN.ConsoleApp.Views
             }
             ViewHelp.WriteLine("BOOK DETAIL INFORMATION", ConsoleColor.Green);
             // chuyển đổi kiểu từ object sang Book, chỉ áp dụng với kiểu class
-            var model = Model as Book;
-            Console.WriteLine($"Authors:     {model.Authors}");
-            Console.WriteLine($"Title:       {model.Title}");
-            Console.WriteLine($"Publisher:   {model.Publisher}");
-            Console.WriteLine($"Year:        {model.Year}");
-            Console.WriteLine($"Edition:     {model.Edition}");
-            Console.WriteLine($"Isbn:        {model.Isbn}");
-            Console.WriteLine($"Tags:        {model.Tags}");
-            Console.WriteLine($"Description: {model.Description}");
-            Console.WriteLine($"Rating:      {model.Rating}");
-            Console.WriteLine($"Reading:     {model.Reading}");
-            Console.WriteLine($"File:        {model.File}");
-            Console.WriteLine($"File Name:   {model.FileName}");
+            Console.WriteLine($"Authors:     {Model.Authors}");
+            Console.WriteLine($"Title:       {Model.Title}");
+            Console.WriteLine($"Publisher:   {Model.Publisher}");
+            Console.WriteLine($"Year:        {Model.Year}");
+            Console.WriteLine($"Edition:     {Model.Edition}");
+            Console.WriteLine($"Isbn:        {Model.Isbn}");
+            Console.WriteLine($"Tags:        {Model.Tags}");
+            Console.WriteLine($"Description: {Model.Description}");
+            Console.WriteLine($"Rating:      {Model.Rating}");
+            Console.WriteLine($"Reading:     {Model.Reading}");
+            Console.WriteLine($"File:        {Model.File}");
+            Console.WriteLine($"File Name:   {Model.FileName}");
 
         }
 
