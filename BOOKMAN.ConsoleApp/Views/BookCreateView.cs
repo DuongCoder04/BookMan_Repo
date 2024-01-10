@@ -24,6 +24,19 @@ namespace BOOKMAN.ConsoleApp.Views
             var rate        = ViewHelp.InputInt("Rate");
             var reading     = ViewHelp.InputBool("Reading");
             var file        = ViewHelp.InputString("File");
+            var request =
+                "do create ? " +
+                $"title = {title} " +
+                $" & authors = {authors}" +
+                $" & publisher = {publisher}" +
+                $" & year = {year}" +
+                $" & edition = {edition}" +
+                $" & tags = {tags}" +
+                $" & description = {description}" +
+                $" & rate = {rate}" +
+                $" & reading = {reading}" +
+                $" & file = {file}";
+            Router.Forward(request);
         }
     }
 }

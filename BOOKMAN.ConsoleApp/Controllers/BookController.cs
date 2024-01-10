@@ -1,6 +1,7 @@
 ﻿using BOOKMAN.ConsoleApp.Views;
 using BOOKMAN.ConsoleApp.DataServices;
 using BOOKMAN.ConsoleApp.Framework;
+using BOOKMAN.ConsoleApp.Models;
 
 namespace BOOKMAN.ConsoleApp.Controllers
 {
@@ -28,9 +29,15 @@ namespace BOOKMAN.ConsoleApp.Controllers
         /// <summary>
         /// kích hoạt chức năng nhập dữ liệu cho 1 cuốn sách
         /// </summary>
-        public void Create()
+        public void Create(Book book = null)
         {
-            Render(new BookCreateView());
+            if(book == null)
+            {
+                Render(new BookCreateView());
+                return;
+            }
+            Repository.Insert(book);
+            return;          
         }
         /// <summary>
         /// kích hoạt chức năng cập nhật
