@@ -1,7 +1,7 @@
 ﻿using System.IO;
 namespace BOOKMAN.ConsoleApp.Framework
 {
-    public class ViewBase
+    public abstract class ViewBase
     {
         protected Router Router = Router.Instance;
         public ViewBase() { }
