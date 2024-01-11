@@ -65,6 +65,44 @@ namespace BOOKMAN.ConsoleApp.Controllers
             // khởi tạo view
             Render(new BookListView(model), path);
         }
+        public void Delete(int id, bool process = false)
+        {
+            if(process == false)
+            {
+                var b = Repository.Select(id);
+                Confirm($"Do you want to delete this book ({b.Title})?(yes/no): ",
+                        $"do delete?id={b.Id}");
+            }
+            else
+            {
+                Repository.Delete(id);
+                Success("Book delete!");
+            }
 
+        }
+        public void Filter(string key)
+        {
+            var model = Repository.Select(key);
+            if (model.Length == 0) Inform("No matched book found!");
+            else Render(new BookListView(model));
+        }
+        public void Mark(int id, bool read = true)
+        {
+            var book = Repository.Select(id);
+            if(book == null)
+            {
+                Error("Book not found!");
+                return;
+            }
+            book.Reading = read;
+            Success($"The book '{book.Title}' are marked as {(read ? "READ" : "UNREAD")}");
+        }
+        public void ShowMarks()
+        {
+            var model = Repository.SelectMarked();
+            var view = new BookListView(model);
+            Render(view);
+        }
     }
+
 }

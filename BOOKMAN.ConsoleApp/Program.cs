@@ -17,7 +17,7 @@ namespace BOOKMAN.ConsoleApp
 
                 Console.WriteLine();
             }
-        }
+        }                   
         private static void Help(Parameter parameter)
         {
             if (parameter == null)
