@@ -34,6 +34,12 @@
             r.Register(route: "single file",
                 action: p => controller.Single(p["id"].ToInt(), p["path"]),
                 help: "[single file ? id = <value> & path = <value>]");
+            r.Register(route: "update",
+                action: p => controller.Update(p["id"].ToInt()),
+                help: "[update ? id = <value>]\r\nFind and update book");
+            r.Register(route: "do update",
+                action: p => controller.Update(p["id"].ToInt(), toBook(p)),
+                help: "this route should be used only in code");
             //r.Register(route: "",
             //    action: null,
             //    help: "");            

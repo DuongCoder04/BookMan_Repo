@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BOOKMAN.ConsoleApp.Framework
+﻿namespace BOOKMAN.ConsoleApp.Framework
 {
     public enum MessageType { Success, Information, Error, Confirmation}
     public class Message
@@ -47,9 +41,7 @@ namespace BOOKMAN.ConsoleApp.Framework
                     Router.Forward(Model.BackRoute);
                 }
             }
+
             }
         }
     }
-
-
-}

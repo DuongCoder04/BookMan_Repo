@@ -1,6 +1,4 @@
 ﻿using BOOKMAN.ConsoleApp.Framework;
-using BOOKMAN.ConsoleApp.DataServices;
-using BOOKMAN.ConsoleApp.Controllers;
 
 namespace BOOKMAN.ConsoleApp
 {
@@ -20,14 +18,9 @@ namespace BOOKMAN.ConsoleApp
                 Console.WriteLine();
             }
         }
-        private static void About(Parameter parameter)
-        {
-            ViewHelp.WriteLine("BOOK MANAGER v1.0", ConsoleColor.Green);
-            ViewHelp.WriteLine("by duong192k4@gmail.com", ConsoleColor.Magenta);
-        }
         private static void Help(Parameter parameter)
         {
-            if(parameter == null)
+            if (parameter == null)
             {
                 ViewHelp.WriteLine("SUPPORTED COMMANDS:", ConsoleColor.Green);
                 ViewHelp.WriteLine(Router.Instance.GetRoutes(), ConsoleColor.Yellow);
@@ -37,6 +30,12 @@ namespace BOOKMAN.ConsoleApp
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             var conmand = parameter["cmd"].ToLower();
             ViewHelp.WriteLine(Router.Instance.GetHelp(conmand));
+        }
+
+        private static void About(Parameter parameter)
+        {
+            ViewHelp.WriteLine("BOOK MANAGER v1.0", ConsoleColor.Green);
+            ViewHelp.WriteLine("by duong192k4@gmail.com", ConsoleColor.Magenta);
         }
 
      }

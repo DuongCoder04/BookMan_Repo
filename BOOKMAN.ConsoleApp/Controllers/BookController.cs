@@ -37,16 +37,23 @@ namespace BOOKMAN.ConsoleApp.Controllers
                 return;
             }
             Repository.Insert(book);
-            return;          
+            Success("Book created!");    
         }
         /// <summary>
         /// kích hoạt chức năng cập nhật
         /// </summary>
         /// <param name="id"></param>
-        public void Update(int id)
+        public void Update(int id, Book book = null)
         {
-            var model = Repository.Select(id);
-            Render(new BookUpdateView(model));
+            if(book == null)
+            {
+                var model = Repository.Select(id);
+                var view = new BookUpdateView(model);
+                Render(view);
+                return;
+            }
+            Repository.Update(id, book);
+            Success("Book updated!");
         }
         /// <summary>
         /// kích hoạt chức năng hiển thị danh sách
