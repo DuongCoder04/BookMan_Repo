@@ -8,9 +8,9 @@
     {
         private static void ConfigRouter()
         {
-            SimpleDataAccess context = new SimpleDataAccess();
-            BookController controller = new BookController(context);
-            ShellController shell = new ShellController(context);
+            IDataAccess context         = new BinaryDataAccess();
+            BookController controller   = new BookController(context);
+            ShellController shell       = new ShellController(context);
 
             Router r = Router.Instance;
             r.Register("about", About);
@@ -69,6 +69,9 @@
             r.Register(route: "do clear",
                 action: p => shell.Clear(true),
                 help: "[clear]\r\nUse with care");
+            r.Register(route: "save shell",
+                action: p => shell.Save(),
+                help: "[save shell]");
             //r.Register(route: "",
             //    action: null,
             //    help: "");            

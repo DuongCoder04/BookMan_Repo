@@ -1,13 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BOOKMAN.ConsoleApp_P2",
-    "\\BOOKMAN.ConsoleApp_P2\\Controllers",
-    "\\BOOKMAN.ConsoleApp_P2\\DataServices",
-    "\\BOOKMAN.ConsoleApp_P2\\Framework",
-    "\\BOOKMAN.ConsoleApp_P2\\Models",
-    "\\BOOKMAN.ConsoleApp_P2\\Views"
+    "\\BOOKMAN.ConsoleApp",
+    "\\BOOKMAN.ConsoleApp\\Controllers",
+    "\\BOOKMAN.ConsoleApp\\DataServices",
+    "\\BOOKMAN.ConsoleApp\\Framework",
+    "\\BOOKMAN.ConsoleApp\\Models",
+    "\\BOOKMAN.ConsoleApp\\Views"
   ],
-  "SelectedNode": "\\BOOKMAN.ConsoleApp_P2\\Models\\Book.cs",
+  "SelectedNode": "\\BOOKMAN",
   "PreviewInSolutionExplorer": false
 }

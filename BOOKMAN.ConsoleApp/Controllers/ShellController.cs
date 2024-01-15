@@ -10,7 +10,7 @@ namespace BOOKMAN.ConsoleApp.Controllers
     internal class ShellController : ControllerBase
     {
         protected Repository Repository;
-        public ShellController(SimpleDataAccess context)
+        public ShellController(IDataAccess context)
         {
             Repository = new Repository(context);
         }
@@ -33,6 +33,11 @@ namespace BOOKMAN.ConsoleApp.Controllers
                 return;
             }
             Inform("No item found!", "Sorry!");
+        }
+        public void Save()
+        {
+            Repository.SaveChanges();
+            Success("Data save!");
         }
         public void Read(int id)
         {

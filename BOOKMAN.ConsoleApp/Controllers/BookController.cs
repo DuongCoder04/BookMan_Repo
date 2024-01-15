@@ -11,7 +11,7 @@ namespace BOOKMAN.ConsoleApp.Controllers
     internal class BookController : ControllerBase
     {
         protected Repository Repository;
-        public BookController(SimpleDataAccess context)
+        public BookController(IDataAccess context)
         {
             Repository = new Repository(context);
         }
@@ -103,6 +103,7 @@ namespace BOOKMAN.ConsoleApp.Controllers
             var view = new BookListView(model);
             Render(view);
         }
+
     }
 
 }

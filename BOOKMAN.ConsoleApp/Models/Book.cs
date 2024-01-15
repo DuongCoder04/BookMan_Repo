@@ -3,6 +3,7 @@
     /// <summary>
     /// Lớp mô tả sách điện tử
     /// </summary>
+    [Serializable]
     public class Book
     {
         private int _id = 1;

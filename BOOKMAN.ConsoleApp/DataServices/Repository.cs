@@ -4,18 +4,18 @@ namespace BOOKMAN.ConsoleApp.DataServices
 {
     public class Repository
     {
-        protected readonly SimpleDataAccess context;
-        public Repository(SimpleDataAccess context)
+        protected readonly IDataAccess _context;
+        public Repository(IDataAccess context)
         {
-            this.context = context;
-            context.Load();
+            _context = context;
+            _context.Load();
         }
-        public void SaveChanges()=> context.SaveChanges();
-        public List<Book> Books=> context.Books;
-        public Book[] Select()=> context.Books.ToArray();
+        public void SaveChanges()=> _context.SaveChanges();
+        public List<Book> Books=> _context.Books;
+        public Book[] Select()=> _context.Books.ToArray();
         public Book Select(int id)
         {
-            foreach(var b in context.Books)
+            foreach(var b in _context.Books)
             {
                 if (b.Id == id) return b;
             }
@@ -25,7 +25,7 @@ namespace BOOKMAN.ConsoleApp.DataServices
         {
             var temp = new List<Book>();
             var k = key.ToLower();
-            foreach(var b in context.Books)
+            foreach(var b in _context.Books)
             {
                 var logic =
                     b.Title.ToLower().Contains(k) ||
@@ -40,16 +40,16 @@ namespace BOOKMAN.ConsoleApp.DataServices
         }
         public void Insert(Book book)
         {
-            var lastIndex = context.Books.Count - 1;
-            var id = lastIndex < 0 ? 1: context.Books[lastIndex].Id + 1;
+            var lastIndex = _context.Books.Count - 1;
+            var id = lastIndex < 0 ? 1: _context.Books[lastIndex].Id + 1;
             book.Id = id;
-            context.Books.Add(book);
+            _context.Books.Add(book);
         }
         public bool Delete(int id)
         {
             var b = Select(id);
             if (b == null) return false;
-            context.Books.Remove(b);
+            _context.Books.Remove(b);
             return true;   
         }
         public bool Update(int id, Book book)
@@ -80,7 +80,7 @@ namespace BOOKMAN.ConsoleApp.DataServices
         }
         public void Clear()
         {
-            context.Books.Clear();
+            _context.Books.Clear();
         }
 
     }

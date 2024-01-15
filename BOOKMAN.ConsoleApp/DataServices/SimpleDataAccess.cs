@@ -1,8 +1,7 @@
-﻿using BOOKMAN.ConsoleApp.Models;
-
-namespace BOOKMAN.ConsoleApp.DataServices
+﻿namespace BOOKMAN.ConsoleApp.DataServices
 {
-    public class SimpleDataAccess
+    using Models;
+    public class SimpleDataAccess : IDataAccess
     {
         public List<Book> Books { get; set; }
         public void Load()
