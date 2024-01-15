@@ -11,10 +11,20 @@ namespace BOOKMAN.ConsoleApp
             ConfigRouter();
             while (true)
             {
-                ViewHelp.Write("# Request >>>", ConsoleColor.Green);
+                ViewHelp.Write("# Request >>> ", ConsoleColor.Green);
                 string request = Console.ReadLine();
-                Router.Instance.Forward(request);
-
+                try
+                {
+                    Router.Instance.Forward(request);
+                }
+                catch (Exception ex)
+                {
+                    ViewHelp.WriteLine(ex.Message, ConsoleColor.Red);
+                }
+                finally
+                {
+                    Console.WriteLine();
+                }
                 Console.WriteLine();
             }
         }                   

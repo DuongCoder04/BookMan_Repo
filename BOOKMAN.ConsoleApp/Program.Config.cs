@@ -72,6 +72,9 @@
             r.Register(route: "save shell",
                 action: p => shell.Save(),
                 help: "[save shell]");
+            r.Register(route: "show stats",
+                action: p => controller.Stats(),
+                help: "[show stats]");
             //r.Register(route: "",
             //    action: null,
             //    help: "");            

@@ -103,6 +103,12 @@ namespace BOOKMAN.ConsoleApp.Controllers
             var view = new BookListView(model);
             Render(view);
         }
+        public void Stats()
+        {
+            var model = Repository.Stats();
+            var view = new BookStatsView(model);
+            Render(view);
+        }
 
     }
 
