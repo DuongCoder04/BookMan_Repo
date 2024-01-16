@@ -52,7 +52,12 @@ namespace BOOKMAN.ConsoleApp.Controllers
                 Error("File not found!");
                 return;
             }
-            Process.Start(book.File);
+            //Process.Start(book.File);
+            System.Diagnostics.Process.Start(new ProcessStartInfo
+            {
+                FileName = book.File,
+                UseShellExecute = true,
+            });
             Success($"You are reading the book '{book.Title}'");
         }
         public void Clear(bool process = false)
