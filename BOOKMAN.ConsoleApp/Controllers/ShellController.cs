@@ -1,10 +1,8 @@
-﻿using System.IO;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 namespace BOOKMAN.ConsoleApp.Controllers
 {
     using DataServices;
     using Models;
-    using Views;
     using Framework;
 
     internal class ShellController : ControllerBase
@@ -14,11 +12,12 @@ namespace BOOKMAN.ConsoleApp.Controllers
         {
             Repository = new Repository(context);
         }
-        public void Shell(string folder, string ext = "*.pdf")
+        
+        public void Shell_pdf(string folder, string ext = "*.pdf")
         {
             if (!Directory.Exists(folder))
             {
-                Error("Folder not found!"); 
+                Error("Folder not found!");     
                 return;
             }
             var files = Directory.GetFiles(folder, ext ?? "*.pdf", SearchOption.AllDirectories);
@@ -27,6 +26,46 @@ namespace BOOKMAN.ConsoleApp.Controllers
                 Repository.Insert(new Book { Title = Path.GetFileNameWithoutExtension(f), File = f });
             }
             if(files.Length > 0)
+            {
+                //Render(new BookListView(Repository.Select()));
+                Success($"{files.Length} item(s) found!");
+                return;
+            }
+            Inform("No item found!", "Sorry!");
+        }
+        public void Shell_docx(string folder, string ext = "*.docx")
+        {
+            if (!Directory.Exists(folder))
+            {
+                Error("Folder not found!");
+                return;
+            }
+            var files = Directory.GetFiles(folder, ext ?? "*.docx", SearchOption.AllDirectories);
+            foreach (var f in files)
+            {
+                Repository.Insert(new Book { Title = Path.GetFileNameWithoutExtension(f), File = f });
+            }
+            if (files.Length > 0)
+            {
+                //Render(new BookListView(Repository.Select()));
+                Success($"{files.Length} item(s) found!");
+                return;
+            }
+            Inform("No item found!", "Sorry!");
+        }
+        public void Shell_xlsx(string folder, string ext = "*.xlsx")
+        {
+            if (!Directory.Exists(folder))
+            {
+                Error("Folder not found!");
+                return;
+            }
+            var files = Directory.GetFiles(folder, ext ?? "*.xlsx", SearchOption.AllDirectories);
+            foreach (var f in files)
+            {
+                Repository.Insert(new Book { Title = Path.GetFileNameWithoutExtension(f), File = f });
+            }
+            if (files.Length > 0)
             {
                 //Render(new BookListView(Repository.Select()));
                 Success($"{files.Length} item(s) found!");

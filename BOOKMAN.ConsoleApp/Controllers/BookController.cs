@@ -109,7 +109,16 @@ namespace BOOKMAN.ConsoleApp.Controllers
             var view = new BookStatsView(model);
             Render(view);
         }
-
+        public void Exit(bool process = false)
+        {
+            if (!process)
+            {
+                Confirm("Do you really want to exit the program ?", "do exit");
+                return;
+            }
+            Environment.Exit(0);
+            Inform("Program exited");
+        }
     }
 
 }

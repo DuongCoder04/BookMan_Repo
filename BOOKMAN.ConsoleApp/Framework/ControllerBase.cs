@@ -24,4 +24,5 @@
         public virtual void Error(string text, string label = "ERROR!") => Render(new Message { Type = MessageType.Error, Text = text, Label = label });
         public virtual void Confirm(string text, string route, string label = "CONFIRMATION") => Render(new Message { Type = MessageType.Confirmation, Text = text, Label = label, BackRoute = route });
     }
+
 }
