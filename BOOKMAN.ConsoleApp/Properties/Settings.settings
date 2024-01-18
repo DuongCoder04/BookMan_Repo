@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BOOKMAN.ConsoleApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataAccess" Type="System.String" Scope="User">
+      <Value Profile="(Default)">binary</Value>
+    </Setting>
+    <Setting Name="PromptText" Type="System.String" Scope="User">
+      <Value Profile="(Default)"># Command &gt;&gt;&gt; </Value>
+    </Setting>
+    <Setting Name="PromptColor" Type="System.ConsoleColor" Scope="User">
+      <Value Profile="(Default)">Green</Value>
+    </Setting>
+    <Setting Name="DataFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">data.bin</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

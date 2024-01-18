@@ -2,6 +2,7 @@
 using BOOKMAN.ConsoleApp.DataServices;
 using BOOKMAN.ConsoleApp.Framework;
 using BOOKMAN.ConsoleApp.Models;
+using System;
 
 namespace BOOKMAN.ConsoleApp.Controllers
 {
@@ -116,8 +117,9 @@ namespace BOOKMAN.ConsoleApp.Controllers
                 Confirm("Do you really want to exit the program ?", "do exit");
                 return;
             }
-            Environment.Exit(0);
             Inform("Program exited");
+            Environment.Exit(0);
+            
         }
     }
 

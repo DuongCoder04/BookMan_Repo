@@ -1,4 +1,5 @@
 ﻿using BOOKMAN.ConsoleApp.Framework;
+using System;
 
 namespace BOOKMAN.ConsoleApp
 {
@@ -7,11 +8,13 @@ namespace BOOKMAN.ConsoleApp
         private static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            var text = Config.Instance.PromptText;
+            var color = Config.Instance.PromptColor;
 
             ConfigRouter();
             while (true)
             {
-                ViewHelp.Write("# Request >>> ", ConsoleColor.Green);
+                ViewHelp.Write(text, color);
                 string request = Console.ReadLine();
                 try
                 {

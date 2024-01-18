@@ -1,4 +1,7 @@
-﻿namespace BOOKMAN.ConsoleApp.Framework
+﻿using System;
+using System.Collections.Generic;
+
+namespace BOOKMAN.ConsoleApp.Framework
 {
     public class Parameter
     {

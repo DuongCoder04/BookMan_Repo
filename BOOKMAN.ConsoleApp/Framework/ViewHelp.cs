@@ -1,4 +1,6 @@
-﻿namespace BOOKMAN.ConsoleApp.Framework
+﻿using System;
+
+namespace BOOKMAN.ConsoleApp.Framework
 {
     public static class ViewHelp
     {

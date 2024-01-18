@@ -4,6 +4,7 @@ namespace BOOKMAN.ConsoleApp.Controllers
     using DataServices;
     using Models;
     using Framework;
+    using System.IO;
 
     internal class ShellController : ControllerBase
     {

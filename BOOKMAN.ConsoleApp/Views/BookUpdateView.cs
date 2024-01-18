@@ -2,6 +2,8 @@
 {
     using BOOKMAN.ConsoleApp.Framework;
     using BOOKMAN.ConsoleApp.Models;
+    using System;
+
     internal class BookUpdateView : ViewBase<Book>
     {
 

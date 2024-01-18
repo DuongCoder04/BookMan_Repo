@@ -1,4 +1,6 @@
-﻿namespace BOOKMAN.ConsoleApp.Framework
+﻿using System;
+
+namespace BOOKMAN.ConsoleApp.Framework
 {
     public enum MessageType { Success, Information, Error, Confirmation}
     public class Message

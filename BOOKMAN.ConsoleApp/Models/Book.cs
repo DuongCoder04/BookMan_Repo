@@ -1,4 +1,6 @@
-﻿namespace BOOKMAN.ConsoleApp.Models
+﻿using System;
+
+namespace BOOKMAN.ConsoleApp.Models
 {
     /// <summary>
     /// Lớp mô tả sách điện tử

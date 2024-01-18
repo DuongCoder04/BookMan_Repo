@@ -4,10 +4,13 @@ using System.Xml.Serialization;
 namespace BOOKMAN.ConsoleApp.DataServices
 {
     using Models;
+    using System.Collections.Generic;
+    using System.IO;
+
     public class XmlDataAccess : IDataAccess
     {
         public List<Book> Books { get; set; } = new List<Book>();
-        private readonly string _file = "data.xml";
+        private readonly string _file = Config.Instance.DataFile;//"data.xml";
         public void Load()
         {
             if (!File.Exists(_file))

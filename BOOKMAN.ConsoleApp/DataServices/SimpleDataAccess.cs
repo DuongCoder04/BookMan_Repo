@@ -1,6 +1,8 @@
 ﻿namespace BOOKMAN.ConsoleApp.DataServices
 {
     using Models;
+    using System.Collections.Generic;
+
     public class SimpleDataAccess : IDataAccess
     {
         public List<Book> Books { get; set; }

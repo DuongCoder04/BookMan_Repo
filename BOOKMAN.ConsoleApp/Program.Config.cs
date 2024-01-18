@@ -8,9 +8,10 @@
     {
         private static void ConfigRouter()
         {
-            IDataAccess context         = new BinaryDataAccess();
+            IDataAccess context         = Config.Instance.IDataAccess; //new BinaryDataAccess();
             BookController controller   = new BookController(context);
             ShellController shell       = new ShellController(context);
+            ConfigController config     = new ConfigController();
 
             Router r = Router.Instance;
             r.Register("about", About);
@@ -111,7 +112,22 @@
                 action: p => controller.Exit(true),
                 help: "[close program]");
 
+            r.Register(route: "config prompt text",
+                action: p => config.ConfigPromptText(p["text"]),
+                help: "[config prompt text ? text = <value>]");
 
+            r.Register(route: "config prompt color",
+                action: p => config.ConfigPromptColor(p["color"]),
+                help: "[config prompt color ? color = <value>]");
+
+            r.Register(route: "current data access",
+                action: p => config.CurrentDataAccess(),
+                help: "[current data access]");
+
+            r.Register(route: "config data access",
+                action: p => config.ConfigDataAccess(p["da"], p["file"]),
+                help: "[config data access ? da = <value:json, binary, xml> & file = <value>]");
+            
             //r.Register(route: "",
             //    action: null,
             //    help: "");            
