@@ -1,0 +1,12 @@
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\bin\Release\net481\BOOKMAN.ConsoleApp.exe.config
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\bin\Release\net481\BOOKMAN.ConsoleApp.runtimeconfig.json
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\bin\Release\net481\BOOKMAN.ConsoleApp.runtimeconfig.dev.json
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\bin\Release\net481\BOOKMAN.ConsoleApp.exe
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\bin\Release\net481\BOOKMAN.ConsoleApp.pdb
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\bin\Release\net481\Newtonsoft.Json.dll
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.csprojAssemblyReference.cache
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.csproj.CoreCompileInputs.cache
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.AssemblyInfo.cs
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.csproj.CopyComplete
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.exe
+E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.pdb
