@@ -57,8 +57,8 @@
                 help: "this route should be used only in code");
 
             r.Register(route: "filter",
-                action: p => controller.Filter(p["key"]),
-                help: "[filter ? key = <value>]\r\nFind book for keyword");
+                action: p => controller.Filter(p["key"], p["path"]),
+                help: "[filter ? key = <value> & path = <value>]\r\nFind book for keyword");
 
             r.Register(route: "add shell pdf",
                 action: p => shell.Shell_pdf(p["path"], p["ext"]),

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9T7sdILogVYRyRKyqYVH2wNOHVZtEwaisMtMiy0Vv+/nfg0kqWuMnzs/VJSdIPiEO95c7YZO27179k9GVGnLXw==",
+  "dgSpecHash": "WRqUqmcWjb+uHvMEg2jzHfuyjtHXQ6cXS2ycTz47Ul8zrQ9FjBx0nlKbMAt4asoM24yEzijnSD62wsc+fD4Lrw==",
   "success": true,
-  "projectFilePath": "E:\\Project\\C_sharp\\BOOKMAN\\BOOKMAN.ConsoleApp\\BOOKMAN.ConsoleApp.csproj",
+  "projectFilePath": "E:\\Project\\C_Sharp\\BOOKMAN\\BOOKMAN.ConsoleApp\\BOOKMAN.ConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512"
   ],

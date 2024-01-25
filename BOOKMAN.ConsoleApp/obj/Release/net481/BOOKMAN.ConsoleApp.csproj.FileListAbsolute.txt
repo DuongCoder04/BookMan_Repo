@@ -10,3 +10,10 @@ E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.Console
 E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.csproj.CopyComplete
 E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.exe
 E:\Project\C_Sharp\BOOKMAN\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.pdb
+C:\Users\ADMIN\Downloads\Compressed\BookMan_Repo-master\BookMan_Repo-master\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\Compressed\BookMan_Repo-master\BookMan_Repo-master\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Downloads\Compressed\BookMan_Repo-master\BookMan_Repo-master\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Downloads\Compressed\BookMan_Repo-master\BookMan_Repo-master\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.AssemblyInfo.cs
+C:\Users\ADMIN\Downloads\Compressed\BookMan_Repo-master\BookMan_Repo-master\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\Compressed\BookMan_Repo-master\BookMan_Repo-master\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.exe
+C:\Users\ADMIN\Downloads\Compressed\BookMan_Repo-master\BookMan_Repo-master\BOOKMAN.ConsoleApp\obj\Release\net481\BOOKMAN.ConsoleApp.pdb

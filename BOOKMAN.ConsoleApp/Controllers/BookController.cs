@@ -81,11 +81,11 @@ namespace BOOKMAN.ConsoleApp.Controllers
             }
 
         }
-        public void Filter(string key)
+        public void Filter(string key, string path = "")
         {
             var model = Repository.Select(key);
             if (model.Length == 0) Inform("No matched book found!");
-            else Render(new BookListView(model));
+            else Render(new BookListView(model), path);
         }
         public void Mark(int id, bool read = true)
         {

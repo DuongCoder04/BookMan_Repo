@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Project\\C_sharp\\BOOKMAN\\BOOKMAN\\BOOKMAN.csproj",
+      "projectUniqueName": "E:\\Project\\C_Sharp\\BOOKMAN\\BOOKMAN\\BOOKMAN.csproj",
       "projectName": "BOOKMAN",
-      "projectPath": "E:\\Project\\C_sharp\\BOOKMAN\\BOOKMAN\\BOOKMAN.csproj",
+      "projectPath": "E:\\Project\\C_Sharp\\BOOKMAN\\BOOKMAN\\BOOKMAN.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "E:\\Project\\C_sharp\\BOOKMAN\\BOOKMAN\\obj\\",
+      "outputPath": "E:\\Project\\C_Sharp\\BOOKMAN\\BOOKMAN\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BOOKMAN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42d08007af378e3838d4b7b22b0e8ed3bb9faaa7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BOOKMAN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BOOKMAN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
